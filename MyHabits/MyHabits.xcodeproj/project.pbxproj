@@ -67,16 +67,8 @@
 				EE8FBD1825EA2D63006EC85C /* viewCellProgress.xib */,
 				EE8C854625E6DC5500F809AA /* HabitViewController.swift */,
 				EEAFFCDD25EF443900795558 /* CreateCellDelegate.swift */,
-				EE8C854225E6D5F200F809AA /* Habit */,
 			);
 			path = MainCollectionView;
-			sourceTree = "<group>";
-		};
-		EE8C854225E6D5F200F809AA /* Habit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Habit;
 			sourceTree = "<group>";
 		};
 		EECDF85225E0B8F70022F02B = {

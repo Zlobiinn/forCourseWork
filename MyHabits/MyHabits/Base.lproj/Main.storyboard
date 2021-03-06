@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="mainTable" dataMode="prototypes" id="al4-VN-7su">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.98039847609999997" green="0.97640281920000005" blue="0.98039323089999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="12" minimumInteritemSpacing="12" sectionInsetReference="layoutMargins" id="sqU-Zu-YFf">
@@ -204,6 +204,7 @@
                             <constraint firstItem="al4-VN-7su" firstAttribute="top" secondItem="zOw-0N-hbN" secondAttribute="bottom" id="2TU-tz-XSk"/>
                             <constraint firstItem="zOw-0N-hbN" firstAttribute="trailing" secondItem="al4-VN-7su" secondAttribute="trailing" id="3YZ-p2-jfA"/>
                             <constraint firstItem="zOw-0N-hbN" firstAttribute="top" secondItem="k1t-ye-Jkv" secondAttribute="top" id="BH0-BY-JFU"/>
+                            <constraint firstItem="al4-VN-7su" firstAttribute="top" secondItem="zOw-0N-hbN" secondAttribute="bottom" id="Jv5-ab-zxz"/>
                             <constraint firstItem="zOw-0N-hbN" firstAttribute="leading" secondItem="al4-VN-7su" secondAttribute="leading" id="ke8-SU-pnp"/>
                         </constraints>
                     </view>
@@ -347,7 +348,7 @@
                                 </connections>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-Lc-F2p">
-                                <rect key="frame" x="128" y="194" width="80" height="33.5"/>
+                                <rect key="frame" x="128" y="194" width="108" height="33.5"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="textColor" red="0.4549019608" green="0.086274509799999996" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -365,9 +366,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7fQ-JH-CYB" firstAttribute="top" secondItem="EPC-ri-nMi" secondAttribute="bottom" constant="7" id="1QQ-iR-3Zr"/>
-                            <constraint firstItem="qRI-4e-WfQ" firstAttribute="leading" secondItem="Wsk-aa-N21" secondAttribute="leading" constant="149" id="1qw-CB-gSw"/>
                             <constraint firstItem="Wsk-aa-N21" firstAttribute="bottom" secondItem="qRI-4e-WfQ" secondAttribute="bottom" constant="15" id="3Kx-5b-Qx1"/>
                             <constraint firstItem="zCU-zw-zyb" firstAttribute="top" secondItem="O9U-Zw-TjL" secondAttribute="bottom" constant="7" id="4TJ-m4-0GE"/>
+                            <constraint firstItem="qRI-4e-WfQ" firstAttribute="centerX" secondItem="28a-oZ-hs4" secondAttribute="centerX" id="6T1-iG-m3x"/>
                             <constraint firstItem="R6a-9o-KWK" firstAttribute="leading" secondItem="28a-oZ-hs4" secondAttribute="leading" id="7RR-DP-x67"/>
                             <constraint firstItem="EPC-ri-nMi" firstAttribute="top" secondItem="R6a-9o-KWK" secondAttribute="bottom" constant="22" id="8OM-1R-G7t"/>
                             <constraint firstItem="vzz-2u-0M7" firstAttribute="top" secondItem="AEu-hl-Td6" secondAttribute="bottom" constant="15" id="EIc-XG-U3j"/>
@@ -377,8 +378,6 @@
                             <constraint firstItem="Cfx-Lc-F2p" firstAttribute="top" secondItem="7fQ-JH-CYB" secondAttribute="bottom" constant="80.5" id="WKK-Yc-m2U"/>
                             <constraint firstItem="vzz-2u-0M7" firstAttribute="top" secondItem="Cfx-Lc-F2p" secondAttribute="bottom" constant="15" id="YTq-3g-Yau"/>
                             <constraint firstItem="O9U-Zw-TjL" firstAttribute="top" secondItem="7fQ-JH-CYB" secondAttribute="bottom" constant="15" id="Yv9-nP-O6r"/>
-                            <constraint firstItem="Wsk-aa-N21" firstAttribute="trailing" secondItem="Cfx-Lc-F2p" secondAttribute="trailing" constant="206" id="ZiJ-kR-5Oz"/>
-                            <constraint firstItem="Wsk-aa-N21" firstAttribute="trailing" secondItem="qRI-4e-WfQ" secondAttribute="trailing" constant="149" id="cTh-EY-9nB"/>
                             <constraint firstItem="EPC-ri-nMi" firstAttribute="leading" secondItem="Wsk-aa-N21" secondAttribute="leading" constant="16" id="ghl-ID-Spq"/>
                             <constraint firstItem="AEu-hl-Td6" firstAttribute="top" secondItem="zCU-zw-zyb" secondAttribute="bottom" constant="7" id="hyM-n8-cgw"/>
                             <constraint firstItem="7fQ-JH-CYB" firstAttribute="leading" secondItem="Wsk-aa-N21" secondAttribute="leading" constant="16" id="i3T-2O-9Hf"/>
@@ -389,6 +388,7 @@
                             <constraint firstItem="zCU-zw-zyb" firstAttribute="leading" secondItem="Wsk-aa-N21" secondAttribute="leading" constant="16" id="t4J-7q-r0k"/>
                             <constraint firstItem="O9U-Zw-TjL" firstAttribute="leading" secondItem="Wsk-aa-N21" secondAttribute="leading" constant="16" id="tKz-8A-E31"/>
                             <constraint firstAttribute="trailing" secondItem="R6a-9o-KWK" secondAttribute="trailing" id="uej-L0-Dul"/>
+                            <constraint firstItem="Wsk-aa-N21" firstAttribute="trailing" secondItem="Cfx-Lc-F2p" secondAttribute="trailing" constant="178" id="wbC-gZ-nm7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Привычки" image="habits_tab_icon" landscapeImage="habits_tab_icon" largeContentSizeImage="habits_tab_icon" selectedImage="habits_tab_icon" id="0mD-m1-mtI"/>
