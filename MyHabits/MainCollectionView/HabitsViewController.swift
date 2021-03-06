@@ -61,23 +61,25 @@ extension HabitsViewController: UICollectionViewDataSource {
         return reUsebleCell
     }
 }
+
+extension HabitsViewController: CreateCellDelegate {
     
-    extension HabitsViewController: CreateCellDelegate {
+    func addNewCell() {
         
-        func addNewCell() {
-            
-            mainTable.reloadData()
-            return
-        }
+        mainTable.reloadData()
+        return
+    }
+}
+
+extension HabitsViewController: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width - 32 , height: 130)
     }
     
-    extension HabitsViewController: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: view.frame.width - 32 , height: 130)
-        }
+        return CGSize(width: view.frame.width - 32, height: 60)
         
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-            return CGSize(width: view.frame.width - 32 , height: 60)
-        }
     }
+}

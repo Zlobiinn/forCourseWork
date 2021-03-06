@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="440" height="60"/>
                 <subviews>
                     <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-fd-aug">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="60"/>
+                        <rect key="frame" x="16" y="0.0" width="408" height="60"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="progressCell" text="Всё получиться!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9K-5H-SBC">
                                 <rect key="frame" x="12" y="10" width="108" height="13"/>
@@ -25,11 +25,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0VS-Pu-KFl">
-                                <rect key="frame" x="12" y="38" width="416" height="4"/>
+                                <rect key="frame" x="12" y="38" width="384" height="4"/>
                                 <color key="progressTintColor" red="0.4549019608" green="0.086274509799999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4De-Gm-YUX">
-                                <rect key="frame" x="412" y="13" width="23" height="7"/>
+                                <rect key="frame" x="377" y="13" width="23" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="EK5-f5-MU9"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-tn-sXy">
-                                <rect key="frame" x="425" y="10" width="9.5" height="12"/>
+                                <rect key="frame" x="393" y="10" width="9.5" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,12 +48,10 @@
                         <constraints>
                             <constraint firstItem="g9K-5H-SBC" firstAttribute="leading" secondItem="0VS-Pu-KFl" secondAttribute="leading" id="2Qf-Lo-dgd"/>
                             <constraint firstItem="g9K-5H-SBC" firstAttribute="top" secondItem="Z8M-tn-sXy" secondAttribute="top" id="4QB-tQ-Tf6"/>
-                            <constraint firstAttribute="trailing" secondItem="4De-Gm-YUX" secondAttribute="trailing" constant="5" id="OTc-UE-ljO"/>
+                            <constraint firstAttribute="trailing" secondItem="4De-Gm-YUX" secondAttribute="trailing" constant="8" id="OTc-UE-ljO"/>
                             <constraint firstItem="0VS-Pu-KFl" firstAttribute="centerX" secondItem="VcE-fd-aug" secondAttribute="centerX" id="Q5r-ui-vKQ"/>
                             <constraint firstAttribute="trailing" secondItem="Z8M-tn-sXy" secondAttribute="trailing" constant="5.5" id="QKB-FD-oLR"/>
-                            <constraint firstAttribute="trailing" secondItem="0VS-Pu-KFl" secondAttribute="trailing" constant="12" id="Tf9-lu-Xjf"/>
                             <constraint firstItem="0VS-Pu-KFl" firstAttribute="top" secondItem="4De-Gm-YUX" secondAttribute="bottom" constant="18" id="Tvr-go-a5r"/>
-                            <constraint firstItem="0VS-Pu-KFl" firstAttribute="leading" secondItem="VcE-fd-aug" secondAttribute="leading" constant="12" id="bff-Xz-jdP"/>
                             <constraint firstItem="g9K-5H-SBC" firstAttribute="baseline" secondItem="Z8M-tn-sXy" secondAttribute="firstBaseline" id="dUP-4a-vXN"/>
                             <constraint firstItem="g9K-5H-SBC" firstAttribute="leading" secondItem="VcE-fd-aug" secondAttribute="leading" constant="12" id="l0E-2K-ZYX"/>
                             <constraint firstItem="g9K-5H-SBC" firstAttribute="top" secondItem="VcE-fd-aug" secondAttribute="top" constant="10" id="pVi-z4-9GM"/>
@@ -63,9 +61,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="VcE-fd-aug" firstAttribute="leading" secondItem="xFS-9Q-XZm" secondAttribute="leading" id="5EE-N4-Eme"/>
-                    <constraint firstAttribute="trailing" secondItem="VcE-fd-aug" secondAttribute="trailing" id="LRL-sJ-RZk"/>
+                    <constraint firstAttribute="trailing" secondItem="VcE-fd-aug" secondAttribute="trailing" constant="16" id="Chx-6g-ubC"/>
                     <constraint firstAttribute="bottom" secondItem="VcE-fd-aug" secondAttribute="bottom" id="eo1-zf-6Eu"/>
+                    <constraint firstItem="VcE-fd-aug" firstAttribute="leading" secondItem="xFS-9Q-XZm" secondAttribute="leading" constant="16" id="juh-gf-gEU"/>
                     <constraint firstItem="VcE-fd-aug" firstAttribute="top" secondItem="xFS-9Q-XZm" secondAttribute="top" id="obV-Oc-nrv"/>
                 </constraints>
             </collectionViewCellContentView>
